@@ -1,0 +1,38 @@
+html, 
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    height: 100%;
+}
+.app {
+    display: flex;
+    height:100%;
+}
+
+.sidebar {
+    background-color: darkslategrey;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-header {
+background-color: bisque;
+height: 60px;
+}
+
+.sidebar-footer {
+    background-color: brown;
+    height: 50px;
+}
+
+.sidebar-groups {
+    flex-grow: 1;
+
+}
+
+.content {
+    flex-grow: 1;
+
+}
+
+
