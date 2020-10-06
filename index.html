@@ -1,22 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-  <body>
-    <main class="app">
-      <nav class="sidebar">
-        <header class="sidebar-header">Header</header>
-        <div class="sidebar-groups">Groups</div>
-        <footer class="sidebar-footer">Footer</footer>
-      </nav>
-      <div class="content">content</div>
-    </main>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-    <script src="bootcamp_javascript.js"></script>
-  </body>
+<body>
+  <main class="app">
+    <nav class="sidebar">
+      <header class="sidebar-header">Header</header>
+      <div class="sidebar-groups">Groups</div>
+      <footer class="sidebar-footer">Footer</footer>
+    </nav>
+    <div class="content">content</div>
+  </main>
+
+
+  <p-dropdown [options]="cities1" [(ngModel)]="selectedCity1"></p-dropdown>
+  <p-dropdown [options]="cities2" [(ngModel)]="selectedCity2" optionLabel="name"></p-dropdown>
+
+  <script src="bootcamp_javascript.js"></script>
+</body>
+
 </html>
