@@ -59,6 +59,7 @@ for (var i = 0; i < dataObjects.length; i++) {
         `;
 }
 
+
 $("#likeBtn").click(function () {
     likeCount = dataObjects[0].likes
     likeCount += 1;
