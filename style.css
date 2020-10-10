@@ -1,132 +1,147 @@
-html, 
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+html,
 body {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Nunito;
     height: 100%;
+
+
 }
+
 .app {
     display: flex;
-    height:100%;
+    height: 100%;
+
 }
 
 .sidebar {
-    background-color: darkslategrey;
-    width: 200px;
+    background-color: #1D2428;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+/* header---------------------*/
+.sidebar-header {
     display: flex;
     flex-direction: column;
 }
 
-.sidebar-header {
-background-color: bisque;
-height: 60px;
+.sheader {
+    background-color: black;
+    text-align: center;
+    padding: 2%;
+    font-size: 30px;
+    color: white;
 }
 
+.smenu {
+    padding-left: 3%;
+    padding-bottom: 13px;
+    padding-top: 13px;
+    background-color: #333131;
+    font-size: 18px;
+    color: white;
+}
+
+
+.headermovie {
+    margin: 0 auto;
+}
+
+/* .sortbutton {
+    padding-right: 3%;
+} */
+
+
+/* foooter---------------------*/
 .sidebar-footer {
-    background-color: brown;
-    height: 50px;
+    display: flex;
+    background-color: black;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
 }
 
-.sidebar-groups {
+/* content---------------------*/
+.sidebar-index {
     flex-grow: 1;
+    background-color: #1D2428;
+
+
 
 }
 
-.content {
+/* content---------------------*/
+.header2 {
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    font-size: 18px;
+    color: white;
+}
+
+#film {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 100px;
+    margin-bottom: 100px;
+}
+
+.box1 {
+    padding-left: 50px;
+    display: flex;
+    flex-direction: row;
+    background-color: #191919;
+    width: 400px;
+    /* height: 256px; */
+    padding: 1%;
+    color: white;
+    margin: 20px;
+}
+
+img {
+    border-radius: 7px;
+    width: 150px;
+}
+
+
+.descp {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
     flex-grow: 1;
-
 }
 
-
-
-
-import {
-    SelectItem
-} from 'primeng/api';
-
-interface City {
-    name: string;
-    code: string;
+.moviename {
+    padding-bottom: 2%;
+    font-size: 22px;
 }
 
-export class MyModel {
+.shortdes {
+    flex-grow: 1;
+}
 
-    cities1: SelectItem[];
+.klick {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
 
-    cities2: City[];
+.like-button {
+    margin-right: 15px;
+    color: green;
+    font-size: larger;
+    cursor: pointer;
+}
 
-    selectedCity1: City;
-
-    selectedCity2: City;
-
-    constructor() {
-        //SelectItem API with label-value pairs
-        this.cities1 = [{
-                label: 'Select City',
-                value: null
-            },
-            {
-                label: 'New York',
-                value: {
-                    id: 1,
-                    name: 'New York',
-                    code: 'NY'
-                }
-            },
-            {
-                label: 'Rome',
-                value: {
-                    id: 2,
-                    name: 'Rome',
-                    code: 'RM'
-                }
-            },
-            {
-                label: 'London',
-                value: {
-                    id: 3,
-                    name: 'London',
-                    code: 'LDN'
-                }
-            },
-            {
-                label: 'Istanbul',
-                value: {
-                    id: 4,
-                    name: 'Istanbul',
-                    code: 'IST'
-                }
-            },
-            {
-                label: 'Paris',
-                value: {
-                    id: 5,
-                    name: 'Paris',
-                    code: 'PRS'
-                }
-            }
-        ];
-
-        //An array of cities
-        this.cities2 = [{
-                name: 'New York',
-                code: 'NY'
-            },
-            {
-                name: 'Rome',
-                code: 'RM'
-            },
-            {
-                name: 'London',
-                code: 'LDN'
-            },
-            {
-                name: 'Istanbul',
-                code: 'IST'
-            },
-            {
-                name: 'Paris',
-                code: 'PRS'
-            }
-        ];
-    }
-
+.likes {
+    border: 1px solid green;
+    border-radius: 200px;
+    padding: 10px;
+    background-color: green;
 }
